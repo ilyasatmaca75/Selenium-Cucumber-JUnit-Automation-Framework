@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>Automation demo login</title>
+<style>body{font:16px system-ui;max-width:440px;margin:10vh auto;padding:16px}label{display:block;margin:14px 0}input{display:block;padding:9px;width:95%}button{padding:10px 22px}#message{margin-top:20px}</style></head>
+<body><h1>Demo login</h1><form id="login"><label>Username<input id="username" required></label>
+<label>Password<input id="password" type="password" required></label><button type="submit">Sign in</button></form>
+<p id="message" role="status"></p>
+<script>document.getElementById('login').addEventListener('submit',function(event){event.preventDefault();const user=document.getElementById('username').value;const pass=document.getElementById('password').value;document.getElementById('message').textContent=user==='demo'&&pass==='secret123'?'Welcome, demo!':'Invalid credentials';});</script>
+</body></html>
