@@ -2,6 +2,9 @@
 
 A **generic**, scenario-isolated BDD starter rebuilt from an older Java/Cucumber/JUnit project. This is a clean replacement, **not** a copy of the original's application-specific steps.
 
+
+For a recruiter-friendly walkthrough of the framework design, see **[ARCHITECTURE.md](ARCHITECTURE.md)**.
+
 ## Requirements
 - JDK **17+**, Maven **3.9+**, and Chrome, Edge, or Firefox installed.
 - Selenium Manager automatically resolves browser drivers; on restricted networks, configure driver provisioning yourself.
