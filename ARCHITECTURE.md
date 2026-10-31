@@ -1,8 +1,6 @@
 # Framework Architecture Guide
 
-This document is intended to give recruiters, hiring managers, and engineering teams a clear picture of the design decisions behind this sample test automation framework.
-
-It demonstrates a **modern Java UI automation architecture** built with **Selenium 4, Cucumber, JUnit Platform, Maven, and the Page Object Model (POM)**. The framework is intentionally generic so it can be adapted to a wide range of web applications.
+This document demonstrates a **modern Java UI automation architecture** built with **Selenium 4, Cucumber, JUnit Platform, Maven, and the Page Object Model (POM)**.
 
 ---
 
@@ -219,17 +217,8 @@ This framework demonstrates more than just working code. It shows engineering ju
 - **CI-ready**: includes workflow support for automated execution
 - **Readable for multiple audiences**: QA, SDET, and hiring teams can follow it
 
-### What recruiters and hiring managers can infer
 
-- I understand **test architecture**, not just test scripting
-- I design for **maintainability and reusability**
-- I understand **automation stability concerns** like synchronization and isolation
-- I can structure code to be **extensible for enterprise use**
-- I can produce a framework that is suitable for **team adoption**
-
----
-
-## 8) Sample extension path for enterprise use
+## 7) Sample extension path for enterprise use
 
 This project is intentionally compact, but it is structured so it can be expanded.
 
@@ -321,8 +310,6 @@ It is intentionally concise, but it reflects how I would structure a more comple
 ---
 
 ## 12) Contact / review note
-
-If you are reviewing this repository as part of a hiring process, I recommend looking at these files first:
 
 1. `README.md`
 2. `ARCHITECTURE.md`
