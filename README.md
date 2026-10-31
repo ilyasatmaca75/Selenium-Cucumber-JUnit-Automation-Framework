@@ -1,9 +1,9 @@
 # Modern Java UI automation framework — Selenium + Cucumber + JUnit Platform
 
-A **generic**, scenario-isolated BDD starter rebuilt from an older Java/Cucumber/JUnit project. This is a clean replacement, **not** a copy of the original's application-specific steps.
+A **generic**, scenario-isolated BDD starter Java/Cucumber/JUnit project.
 
 
-For a recruiter-friendly walkthrough of the framework design, see **[ARCHITECTURE.md](ARCHITECTURE.md)**.
+For a walkthrough of the framework design, see **[ARCHITECTURE.md](ARCHITECTURE.md)**.
 
 ## Requirements
 - JDK **17+**, Maven **3.9+**, and Chrome, Edge, or Firefox installed.
@@ -17,7 +17,6 @@ mvn clean test -Psmoke
 mvn clean test -Dtags='@ui and not @wip'
 mvn clean test -Dbase.url=https://your-test-environment.example/login
 ```
-The default `classpath:demo/login.html` is a local HTML fixture and needs no remote server. The page and steps are illustrative only; replace both when integrating your AUT. `-Dbase.url` changes the target address, **not** the sample locators or expectations.
 
 Configuration precedence: Java system property > environment variable (uppercase with dots replaced by underscores) > default. Supported keys: `browser` (chrome/firefox/edge), `headless` (true/false), `timeout.seconds` (default 10), `base.url`.
 
@@ -60,5 +59,3 @@ Parallel execution is intentionally **off by default**. Each scenario gets its o
 - Failure swallowing -> **build fails on test failures**.
 - HTML report + screenshot + JSON/XML outputs and CI workflow.
 
-### Limitations
-A real browser and dependencies are needed to execute the UI suite. The local fixture is not an authentication security test. This is a web UI starter, not a full API/mobile framework. For API testing, add a separate `api/` client layer and API-specific scenarios; keep the driver out of those scenarios.
